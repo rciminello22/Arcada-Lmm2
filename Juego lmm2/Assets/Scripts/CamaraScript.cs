@@ -25,7 +25,7 @@ public class CamaraScript : MonoBehaviour
 
     void Update()
     {
-        TargetPos = new Vector3 (Player.transform.position.x, Player.transform.position.y, transform.position.z);
+        TargetPos = new Vector3 (Player.transform.position.x, Player.transform.position.y + 1, transform.position.z);
 
         if(playerMovement.Horizontal == 1){
             TargetPos = new Vector3 (TargetPos.x + HaciaDelante, TargetPos.y, transform.position.z);
@@ -46,7 +46,7 @@ public class CamaraScript : MonoBehaviour
     void LateUpdate(){
 
         if(ZoomActive){
-            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 7 , Speed); 
+            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 8 , Speed); 
         } else {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 3.5f , Speed);
         }

@@ -8,10 +8,16 @@ public class MovementAgares : MonoBehaviour
     private Vector3 posFinal;
     public float Vel;
     bool AgaresSube = false;
+    bool primeraVez = false;
+
+
+    private void Start(){
+        posFinal = new Vector3 (transform.position.x, transform.position.y + 4f, transform.position.z);
+    }
+
 
     private void Update()
     {
-        posFinal = new Vector3 (transform.position.x, transform.position.y + 2f, transform.position.z);
 
         Vector3 direction = Player.transform.position - transform.position;
         if(direction.x >= 0.0f){
@@ -20,17 +26,31 @@ public class MovementAgares : MonoBehaviour
 
         if(AgaresSube){
             transform.position = Vector3.Lerp(transform.position, posFinal, Vel * Time.deltaTime);
-            Invoke("Stop", 2.0f);
+            Invoke("Stop", 1.0f);
+        }
+
+        if(transform.position != posFinal){
+            primeraVez = false;
+        } else {
+            primeraVez = true;
         }
 
     }
 
     public void OnBecameVisible(){
-        Debug.Log("esta visible");
-        AgaresSube = true;
+       if(primeraVez == false){
+            //Debug.Log("esta visible");
+            AgaresSube = true;
+        }
     }
 
     void Stop(){
         AgaresSube = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D col){
+        if(col.gameObject.CompareTag("Player")){
+            col.gameObject.GetComponent<PlayerMovement>().TomarDaño(col.GetContact(0).normal);
+        }
     }
 }

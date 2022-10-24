@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1410141594}
   HaciaDelante: 0.5
-  Smoothing: 2.5
+  Smoothing: 1
   Speed: 0.001
 --- !u!82 &519420034
 AudioSource:
@@ -2417,7 +2417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1410141594}
-  Vel: 0.7
+  Vel: 2
 --- !u!1 &1410141594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,6 +2562,9 @@ MonoBehaviour:
   JumpForce: 12
   Horizontal: 0
   RespawnVel: 1
+  SePuedeMover: 1
+  tiempoPerdidaControl: 2
+  VelocidadRebote: {x: 20, y: 20}
 --- !u!95 &1410141600
 Animator:
   serializedVersion: 4
