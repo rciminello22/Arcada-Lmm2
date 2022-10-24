@@ -61,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-      //Rigidbody2D.AddForce(Vector2.up * JumpForce);
         Rigidbody2D.AddForce(new Vector2(0f, JumpForce),ForceMode2D.Impulse);
     }
 
@@ -94,7 +93,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Rebote(Vector2 puntoGolpe){
-        //respawn.RespawnPlayer();
         Rigidbody2D.velocity = new Vector2 (-VelocidadRebote.x * puntoGolpe.x, VelocidadRebote.y);
     }
 

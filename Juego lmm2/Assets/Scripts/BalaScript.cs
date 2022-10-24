@@ -25,4 +25,8 @@ public class BalaScript : MonoBehaviour
         Direction = direction;
     }
 
+
+    public void DestroyBullet(){
+        Destroy(gameObject);
+    }
 }
