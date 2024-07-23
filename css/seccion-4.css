@@ -1,0 +1,153 @@
+#seccion-4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    background-color: rgb(208, 245, 247);
+}
+
+#seccion-4 h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-bottom: 50px;
+
+}
+
+.estrategia {
+    font-weight: 500;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.4;
+
+}
+
+.negrita {
+
+    font-weight: 600;
+}
+
+.titulo-img-center {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+
+.container-flex {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+    padding: 15px 5px;
+    background-color: rgba(4, 30, 60, 1);
+    border-radius: 100px;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 300px;
+    width: 100%;
+}
+
+.box h3 {
+    font-size: 1.3rem;
+    color: rgba(72, 193, 15, 1);
+    padding-bottom: 10px;
+}
+
+
+.Interceptar {
+    width: 100%;
+    font-size: 1.4;
+    color: rgb(255, 255, 255);
+    margin: 0 30px;
+    padding: 15px 5px;
+    background-color: rgba(4, 30, 60, 1);
+    border-radius: 100px;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 300px;
+}
+
+.Interceptar h3 {
+    font-size: 1.2rem;
+    color: rgba(72, 193, 15, 1);
+    padding-bottom: 10px;
+}
+
+.informacion {
+    max-width: 80%;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.mostrar-planta-1 {
+
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+
+.mostrar-planta-2 {
+
+    position: absolute;
+    top: 8%;
+    right: 5%;
+
+}
+
+@media (max-width: 768px) {
+
+
+    .mostrar-planta-1 {
+        display: none;
+
+    }
+
+    .mostrar-planta-2 {
+        display: none;
+
+    }
+
+    .container-flex {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .box {
+
+        height: 53vw;
+    }
+
+    .Interceptar {
+
+        margin: 20px 0;
+        height: 53vw;
+
+    }
+
+
+    #seccion-4 {
+        padding: 30px;
+    }
+
+
+    #seccion-4 h1 {
+        font-size: 1.6rem;
+        padding-bottom: 2.5rem;
+
+    }
+
+    .estrategia {
+        font-weight: 500;
+        font-size: 1.2rem;
+        /* max-width: 400px; */
+        line-height: 1.4;
+
+    }
+
+
+}

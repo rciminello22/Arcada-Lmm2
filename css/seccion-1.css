@@ -1,0 +1,211 @@
+#seccion-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(4, 30, 60, 1);
+
+}
+
+#seccion-1 h1 {
+    margin-top: 20px;
+    color: white;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+.conteiner-flex {
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedor-img-button {
+    margin-top: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.hoja-escritorio {
+
+    position: absolute;
+    top: -10%;
+    left: 50%;
+
+}
+
+.hoja-mobile {
+
+    position: absolute;
+    display: none;
+
+}
+
+.img-portada {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
+
+.p1 {
+    display: block;
+}
+
+.p2 {
+    padding: 0 2rem;
+
+}
+
+.texto1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 30px 0px;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+.texto2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 30px 0px;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+.resaltado {
+
+    color: rgb(81, 255, 0);
+}
+
+.resaltado-3 {
+
+    font-weight: 600;
+
+}
+
+
+.boton-cta-escritorio {
+    color: white;
+    border-radius: 30px;
+    margin: 30px auto 0;
+    background-color: rgba(74, 144, 41, 1);
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    border: none;
+    font-weight: 500;
+    width: max-content;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.boton-cta-mobile {
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(74, 144, 41, 1);
+    padding: 0.5em 1em;
+    border: none;
+    width: max-content;
+    display: none;
+
+}
+
+.boton-cta-mobile a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.boton-cta-escritorio:hover {
+
+    filter: brightness(80%);
+}
+
+.boton-cta-mobile:hover {
+
+    filter: brightness(80%);
+}
+
+.contenedor-img-button {
+
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+
+    #seccion-1 {
+        padding-top: 0;
+        display: block;
+
+    }
+
+    #seccion-1 h1 {
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    .texto1 {
+        color: white;
+        font-size: 1.2rem;
+        margin: 30px 0;
+        max-width: 800px;
+    }
+
+    .texto2 {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 30px 0;
+        max-width: 700px;
+    }
+
+    .img-portada {
+        border-radius: 0;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .boton-cta-escritorio {
+        display: none;
+
+    }
+
+    .boton-cta-mobile {
+        display: flex;
+        font-size: 1.4rem;
+        padding: 0.5em 1em;
+        position: absolute;
+        font-weight: 500;
+        text-transform: uppercase;
+        bottom: 1rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hoja-mobile {
+        top: 0;
+        right: 1rem;
+        display: flex;
+
+    }
+
+    .hoja-escritorio {
+
+        display: none;
+    }
+
+    .conteiner-flex {
+        margin-top: 0px;
+        padding: 0 30px;
+    }
+
+    .contenedor-img-button {
+        margin-top: 0px;
+        background-color: white;
+    }
+
+}
