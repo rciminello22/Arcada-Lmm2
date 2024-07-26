@@ -7,6 +7,29 @@ const mailFeedback = document.getElementById("mail");
 const botonChequearInbox = document.getElementById("chequearInbox");
 const limpiarForm = document.getElementById("formulario");
 const header = document.getElementById("header");
+const abrirNav = document.querySelector("#abrir-nav");
+const cerrarNav = document.querySelector("#cerrar-nav");
+const nav = document.querySelector("#nav");
+const links = document.querySelectorAll(".nav-menu-link");
+const body = document.body;
+
+abrirNav.addEventListener("click", function () {
+  nav.classList.add("visible");
+  body.classList.toggle("no-scroll");
+});
+
+cerrarNav.addEventListener("click", function () {
+  nav.classList.remove("visible");
+  body.classList.toggle("no-scroll");
+  
+});
+
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    body.classList.toggle("no-scroll");
+    nav.classList.remove('visible');
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const hiddenContents = document.querySelectorAll(".contenido-oculto");

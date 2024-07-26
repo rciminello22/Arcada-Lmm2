@@ -15,9 +15,9 @@
 
 .conteiner-flex {
   margin-top: 60px;
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contenedor-img-button {
@@ -27,8 +27,8 @@
 }
 
 .hoja-escritorio {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   position: absolute;
   left: 40%;
 }
@@ -41,6 +41,10 @@
 .img-portada {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.conteiner-flex h1 {
+  position: relative;
 }
 
 .p1 {
@@ -94,9 +98,9 @@
 }
 
 .boton-cta-mobile {
-  color: rgb(208, 245, 247);
+  color: #00147b;
   border-radius: 30px;
-  background-color: rgba(74, 144, 41, 1);
+  background-color: rgb(186 235 108);
   padding: 0.5em 1em;
   border: none;
   width: max-content;
@@ -104,7 +108,7 @@
 }
 
 .boton-cta-mobile a {
-  color: rgb(208, 245, 247);
+  color: #00147b;
   text-decoration: none;
 }
 
@@ -134,7 +138,6 @@
   .texto1 {
     color: rgb(208, 245, 247);
     font-size: 1.2rem;
-    margin: 30px 0;
     max-width: 800px;
   }
 
@@ -142,7 +145,6 @@
     color: rgb(208, 245, 247);
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 30px 0;
     max-width: 700px;
   }
 
@@ -164,15 +166,17 @@
     position: absolute;
     font-weight: 500;
     text-transform: uppercase;
-    bottom: 1rem;
+    top: 5rem;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .hoja-mobile {
-    top: 0;
-    right: 1rem;
-    display: flex;
+    right: 10%;
+    top: 7%;
+    display: block;
+    width: 100px;
+    height: 90px;
   }
 
   .hoja-escritorio {
@@ -187,5 +191,9 @@
   .contenedor-img-button {
     margin-top: 0px;
     color: rgb(208, 245, 247);
+  }
+
+  .p2 {
+    padding: 0 1rem;
   }
 }

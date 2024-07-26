@@ -100,7 +100,7 @@
 .contenido-oculto {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .contenido-oculto.visible {
