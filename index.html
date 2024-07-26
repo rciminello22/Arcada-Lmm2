@@ -1,212 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/seccion-1.css">
-    <link rel="stylesheet" href="css/seccion-2.css">
-    <link rel="stylesheet" href="css/seccion-3.css">
-    <link rel="stylesheet" href="css/seccion-4.css">
-    <link rel="stylesheet" href="css/seccion-5.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/feedback.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/seccion-1.css" />
+    <link rel="stylesheet" href="css/seccion-2.css" />
+    <link rel="stylesheet" href="css/seccion-3.css" />
+    <link rel="stylesheet" href="css/seccion-4.css" />
+    <link rel="stylesheet" href="css/seccion-5.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
     <script src="js/index.js" defer></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="header" id="header">
-        <nav class="nav">
-            <a href="#" class="main"><img src="img/slack.png" alt="logo" width="100%"></a>
-            <button class="nav-toggle">
-                <img src="img/menu.png" alt="Menu hamburguesa">
-            </button>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#seccion-1" class="nav-menu-link">Principal</a></li>
-                <li class="nav-menu-item"><a href="#About" class="nav-menu-link">Sobre nosotros</a></li>
-                <li class="nav-menu-item"><a href="#seccion-5" class="nav-menu-link">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <a href="#" class="main"
+          ><img src="img/slack.png" alt="logo" width="100%"
+        /></a>
+        <button class="nav-toggle">
+          <img src="img/menu.png" alt="Menu hamburguesa" />
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#seccion-1" class="nav-menu-link">Principal</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#About" class="nav-menu-link">Sobre nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#seccion-5" class="nav-menu-link">Inscribirme</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section id="seccion-1">
+      <div class="conteiner-flex">
+        <img
+          class="hoja-mobile"
+          src="./img/hoja-2.png"
+          alt="imagen-hoja"
+          width="120"
+          height="120"
+        />
+        <img
+          class="hoja-escritorio"
+          src="./img/hoja.png"
+          alt="imagen-hoja"
+          width="200"
+          height="200"
+        />
+        <h1><span class="p1">Nature</span> <span class="p2">Impact</span></h1>
+        <p class="texto1">
+          Las zapatillas que incentivan a generar un
+          <span class="resaltado">verdadero cambio.</span>
+        </p>
+        <p class="texto2">
+          <span class="resaltado-3">Inscribite ahora</span> y contá con la
+          oportunidad de recorrer las instalaciones donde se producen.
+        </p>
+        <a href="#seccion-5" class="boton-cta-escritorio" id="About"
+          >Inscribirme</a
+        >
+      </div>
 
-        <div class="conteiner-flex" >
-            <img class="hoja-mobile" src="./img/hoja-2.png" alt="imagen-hoja" width="120" height="120">
-            <img class="hoja-escritorio" src="./img/hoja.png" alt="imagen-hoja" width="200" height="200">
-            <h1><span class="p1">Nature</span> <span class="p2">Impact</span></h1>
-            <p class="texto1">Las zapatillas que incentivan a generar un <span class="resaltado">verdadero
-                    cambio.</span> </p>
-            <p class="texto2"><span class="resaltado-3">Inscribite ahora</span> y contá con la oportunidad de recorrer
-                las instalaciones donde se producen.</p>
-            <a href="#seccion-5" class="boton-cta-escritorio " id="About">Inscribirme</a>
-        </div>
-
-        <div class="contenedor-img-button">
-            <img class="img-portada" src="img/portada.jpg" alt="portada" width="500" height="500">
-            <button class="boton-cta-mobile"><a href="#seccion-5">Inscribirme</a></button>
-        </div>
-
+      <div class="contenedor-img-button">
+        <img
+          class="img-portada"
+          src="img/portada.jpg"
+          alt="portada"
+          width="500"
+          height="500"
+        />
+        <button class="boton-cta-mobile">
+          <a href="#seccion-5">Inscribirme</a>
+        </button>
+      </div>
     </section>
 
     <section id="seccion-2">
-        <img src="img/user_pin.png" alt="user logo">
-        <h1 id="About">¿QUIÉNES SOMOS?</h1>
-        <p>Somos una empresa que se dedica a la
-            venta de calzado, específicamente el deportivo. La cual su única sede está ubicada en la <span>localidad de La
-                Plata.</span>
-        <p>
+        <div class="contenido-oculto">
+            <img src="img/quien.png" alt="user logo" />
+            <h1 id="About" >¿QUIÉNES SOMOS?</h1>
+            <p>
+              Somos una empresa que se dedica a la venta de calzado, específicamente
+              el deportivo. La cual su única sede está ubicada en la
+              <span>localidad de La Plata.</span>
+            </p>
+        </div>
+
+
+      <p></p>
     </section>
 
     <section id="seccion-3">
-        <div>
-            <h1 class="titulo1">El fin de los residuos plásticos</h1>
+      <div>
+        <h1 class="titulo1">El fin de los residuos plásticos</h1>
+      </div>
+      <div class="contenedor-flex">
+        <div class="contenedor-portada-2">
+          <img
+            class="img-portada-2"
+            src="img/portada 2.jpg"
+            alt="portada 2"
+            width="500"
+            height="500"
+          />
         </div>
-        <div class="contenedor-flex">
-            <div class="contenedor-portada-2">
-                <img class="img-portada-2" src="img/portada 2.jpg" alt="portada 2" width="500" height="500">
-            </div>
-            <div class="contenedor-2">
-                <img class="icono-reciclar" src="img/end plastic.png" alt="logo end plastic" width="30%">
+        <div class="contenedor-2">
+          <img
+            class="icono-reciclar"
+            src="img/end plastic.png"
+            alt="logo end plastic"
+            width="30%"
+          />
 
-                <p class="t1">Hoy en día, las <span>NATURE IMPACT</span> se han confeccionado en su totatildad con
-                    materiales
-                    reciclados. Ahora
-                    podés ayudar a acabar con los residuos plásticos con esta clásica silueta.</p>
-                <br><br>
-                <p class="t2">"El plástico es un fallo de diseño, un material extraño que no debería existir en el
-                    planeta."</p>
-                <p class="t3">–Cyrill Gutsch.</p>
-            </div>
+          <p class="t1">
+            Hoy en día, las <span>NATURE IMPACT</span> se han confeccionado en
+            su totatildad con materiales reciclados. Ahora podés ayudar a acabar
+            con los residuos plásticos con esta clásica silueta.
+          </p>
+          <br /><br />
+          <p class="t2">
+            "El plástico es un fallo de diseño, un material extraño que no
+            debería existir en el planeta."
+          </p>
+          <p class="t3">–Cyrill Gutsch.</p>
         </div>
-
-
+      </div>
     </section>
 
     <section id="seccion-4">
-        <img class="mostrar-planta-1" src="./img/planta-2.png" alt="planta" width="250" height="250">
-        <img class="mostrar-planta-2" src="./img/planta.png" alt="planta" width="250" height="250">
-        <div class="titulo-img-center">
-            <img src="img/reciclar logo.png" alt="logo de reciclaje" width="100" height="100">
-            <h1>¿Qué estrategia utilizamos?</h1>
+      <!--<img
+        class="mostrar-planta-1"
+        src="./img/planta-2.png"
+        alt="planta"
+        width="250"
+        height="250"
+      />
+      <img
+        class="mostrar-planta-2"
+        src="./img/planta.png"
+        alt="planta"
+        width="250"
+        height="250"
+      /> -->
+      <div class="titulo-img-center">
+        <img
+          src="img/reciclar logo.png"
+          alt="logo de reciclaje"
+          width="100"
+          height="100"
+        />
+        <h1>¿Qué estrategia utilizamos?</h1>
+      </div>
+      <p class="estrategia">
+        <span class="negrita"> La llamamos AIR.</span> Se trata de una
+        iniciativa que incluye pasos sencillos y escalables para que todo el
+        mundo pueda participar, desde hogares hasta instituciones, empresas y
+        gobiernos. <br />
+        <br />
+        <span class="negrita"
+          >Cada letra de la palabra AIR representa una acción: Ahorrar,
+          Interceptar, Rediseñar.</span
+        >
+      </p>
+      <div class="container-flex">
+        <div class="box contenido-oculto">
+          <h3>Ahorrar</h3>
+          <p class="informacion">
+            Usamos la menor cantidad posible de plástico y lo sustituimos por
+            alternativas siempre que podamos.
+          </p>
         </div>
-        <p class="estrategia"><span class="negrita"> La llamamos AIR.</span> Se trata de una iniciativa que incluye
-            pasos
-            sencillos y escalables para que todo el
-            mundo pueda participar, desde hogares hasta instituciones, empresas y gobiernos. <br> <br>
-            <span class="negrita">Cada letra de la palabra AIR representa una acción: Ahorrar, Interceptar,
-                Rediseñar.</span>
-        </p>
-        <div class="container-flex">
-            <div class="box">
-                <h3>Ahorrar</h3>
-                <p class="informacion">Usamos la menor cantidad posible de plástico y lo sustituimos por alternativas
-                    siempre que
-                    podamos.
-                </p>
-            </div>
-            <div class="Interceptar">
-                <h3>Interceptar</h3>
-                <p class="informacion">Evitamos que el plástico llegue a los océanos a base de recogerlo, reciclarlo y
-                    encontrar otros
-                    usos para los residuos plásticos.</p>
-            </div>
-            <div class="box">
-                <h3>Rediseñar</h3>
-                <p class="informacion">Implica replantearse los materiales, métodos y productos que contribuyen al
-                    problema y adoptar un
-                    enfoque distinto de lo que es la vida.</p>
-            </div>
+        <div class="Interceptar contenido-oculto">
+          <h3>Interceptar</h3>
+          <p class="informacion">
+            Evitamos que el plástico llegue a los océanos a base de recogerlo,
+            reciclarlo y encontrar otros usos para los residuos plásticos.
+          </p>
         </div>
-
+        <div class="box contenido-oculto">
+          <h3>Rediseñar</h3>
+          <p class="informacion">
+            Implica replantearse los materiales, métodos y productos que
+            contribuyen al problema y adoptar un enfoque distinto de lo que es
+            la vida.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="seccion-5">
-        <div class="incripcion-img">
-            <img class="img-inscripcion" src="img/inscription.png" alt="logo de inscripción" width="100" height="100">
+      <div class="incripcion-img">
+        <img
+          class="img-inscripcion"
+          src="img/inscription.png"
+          alt="logo de inscripción"
+          width="100"
+          height="100"
+        />
+      </div>
+
+      <p class="informacion-form">
+        <span class="resaltado-3"
+          >Inscribite y sé parte del cambio. <br
+        /></span>
+        Además obtené toda la información que necesitas para realizar el tour
+        por nuestras instalaciones de reciclaje.
+      </p>
+
+      <button class="boton-form" id="inscribirse">Inscribirme</button>
+
+      <section id="seccion-form">
+        <div class="container-titulos">
+          <h1>Completa el siguiente formulario</h1>
+          <h3 class="pregunta">
+            ¿Qué otra ropa <span class="resaltado-2">eco-sustentable</span> te
+            interesaría?
+          </h3>
         </div>
 
-        <p class="informacion-form"><span class="resaltado-3">Inscribite y sé parte del cambio. <br></span> Además obtené
-            toda la información que necesitas para realizar el tour
-            por nuestras instalaciones de reciclaje.</p>
-
-        <button class="boton-form" id="inscribirse">Inscribirme</button>
-
-
-        <section id="seccion-form">
-
-            <div class="container-titulos">
-                <h1>Completa el siguiente formulario</h1>
-                <h3 class="pregunta">¿Qué otra ropa <span class="resaltado-2">eco-sustentable</span> te interesaría?
-                </h3>
+        <div class="container-form">
+          <form id="formulario" action="#">
+            <div class="dropdown">
+              <select class="opciones" name="" id="">
+                <option value="" disabled selected>
+                  Selecioná la que deseas
+                </option>
+                <option value="">Pantalones</option>
+                <option value="">Remeras</option>
+                <option value="">Pantalones y remeras</option>
+              </select>
             </div>
 
-            <div class="container-form">
-                <form id="formulario" action="#">
-
-                    <div class="dropdown">
-                        <select class="opciones" name="" id="">
-                            <option value="" disabled selected>Selecioná la que deseas</option>
-                            <option value="">Pantalones</option>
-                            <option value="">Remeras</option>
-                            <option value="">Ambos</option>
-                        </select>
-                    </div>
-
-
-                    <div class="casillas">
-                        <label class="ayuda" for="nombre">Nombre</label>
-                        <br>
-                        <input id="nombreInput" class="casilla" type="text" name="nombre" required>
-                        <br>
-                        <label class="ayuda" for="mail">Email</label>
-                        <br>
-                        <input id="mailInput" class="casilla" type="text" name="mail" required>
-                        <br>
-                        <div class="btn-centrado">
-                            <button id="enviar" class="boton-form" type="button">Enviar</button>
-                        </div>
-                    </div>
-
-                </form>
+            <div class="casillas">
+              <label class="ayuda" for="nombre">Nombre</label>
+              <br />
+              <input
+                id="nombreInput"
+                class="casilla"
+                type="text"
+                name="nombre"
+                required
+              />
+              <br />
+              <label class="ayuda" for="mail" >Email</label>
+              <br />
+              <input
+                id="mailInput"
+                class="casilla"
+                type="text"
+                name="mail"
+                required
+              />
+              <br />
+              <div class="btn-centrado">
+                <button id="enviar" class="boton-form" type="submit">
+                  Enviar
+                </button>
+              </div>
             </div>
-        </section>
-        <section id="seccion-feedback">
+          </form>
+        </div>
+      </section>
+      <section id="seccion-feedback">
+        <div class="contenedor-feedback">
+          <div class="titulo-feedback">
+            <h1>¡Gracias por tu tiempo <span id="nombre"></span>!</h1>
+            <img
+              class="img-fb"
+              src="./img/completado.png"
+              alt="completado"
+              width="80"
+              height="80"
+            />
+          </div>
 
-            <div class="contenedor-feedback">
-
-                <div class="titulo-feedback">
-                    <h1>¡Gracias por tu tiempo <span id="nombre"></span>!</h1>
-                    <img class="img-fb" src="./img/completado.png" alt="completado" width="80" height="80">
-                </div>
-
-                <p class="informacion-fb">En este momento te enviamos a <span class="resaltado-2" id="mail"></span> más
-                    información
-                    respecto al tour y tu entrada con la que podés acceder.</p>
-                <div class="div-boton-fb">
-                    <button id="chequearInbox" class="boton-fb"><a href="#" class="link-boton-fb">Chequear imbox</a></button>
-                </div>
-
-            </div>
-
-        </section>
+          <p class="informacion-fb">
+            En este momento te enviamos a
+            <span class="resaltado-2" id="mail"></span> más información respecto
+            al tour y tu entrada con la que podés acceder.
+          </p>
+          <div class="div-boton-fb">
+            <button id="chequearInbox" class="boton-fb">
+              <a href="#" class="link-boton-fb">Chequear imbox</a>
+            </button>
+          </div>
+        </div>
+      </section>
     </section>
 
     <footer class="footer">
-        <p>© Hecho por Renzo Ciminello</p>
+      <p>© Hecho por Renzo Ciminello</p>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

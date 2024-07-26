@@ -27,7 +27,7 @@ body {
 
 .scroll-effect {
     background: rgba(4, 30, 60, 1, 0.9);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
   }
 
 .nav {
@@ -49,19 +49,22 @@ body {
 .nav-menu-item {
     margin: 0 20px;
     width: max-content;
+    
 }
 
 .nav-menu-link {
+    display: inline-block;
     color: #ff7b00;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 500;
-    line-height: 100px;
     padding: 5px 15px;
+    line-height: 100px;
+    transition: transform 0.2s ease;
 }
 
 .nav-menu-link:hover {
-
+transform: scale(1.05);
 }
 
 .nav-toggle {
@@ -77,19 +80,6 @@ section {
     height: 100%;
     padding: 70px 180px;
     margin: 0;
-}
-
-
-
-
-#seccion-3 {
-
-    background-color: rgba(4, 30, 60, 1);
-}
-
-#seccion-5 {
-
-    background-color: rgba(34, 64, 100, 1)
 }
 
 
