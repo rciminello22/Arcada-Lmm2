@@ -31,8 +31,7 @@ body {
   align-items: center;
   z-index: 1;
   width: 100%;
-  height: 100px;
-  padding: 70px 180px;
+  padding: 20px 180px 10px;
 }
 
 .nav-menu {
@@ -43,6 +42,10 @@ body {
 
 .nav-menu-item {
   width: max-content;
+}
+
+.logo{
+    width: 50px;
 }
 
 .nav-menu-link {

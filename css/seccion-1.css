@@ -14,14 +14,14 @@
 }
 
 .conteiner-flex {
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .contenedor-img-button {
-  margin-top: 60px;
+  margin-top: 30px;
   display: inline-block;
   position: relative;
 }
