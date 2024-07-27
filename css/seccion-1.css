@@ -125,6 +125,7 @@
 }
 
 @media (max-width: 768px) {
+
   #seccion-1 {
     padding-top: 0;
     display: block;
@@ -196,4 +197,5 @@
   .p2 {
     padding: 0 1rem;
   }
+
 }
