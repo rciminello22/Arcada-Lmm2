@@ -30,7 +30,7 @@
   width: 140px;
   height: 140px;
   position: absolute;
-  left: 40%;
+  left: 50%;
 }
 
 .hoja-mobile {
@@ -124,8 +124,24 @@
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1450px) {
 
+  #seccion-1{
+    justify-content: space-between;
+  }
+
+  .img-portada{
+    max-width: 300px;
+    height: 80%;
+    margin-left: 30px;
+  }
+
+  .hoja-escritorio {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   #seccion-1 {
     padding-top: 0;
     display: block;
@@ -197,5 +213,4 @@
   .p2 {
     padding: 0 1rem;
   }
-
 }
