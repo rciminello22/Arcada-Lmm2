@@ -26,7 +26,7 @@
 
   <body>
     <header class="header" id="header">
-      <a href="#"><img src="img/slack.png" alt="logo" class="logo"/></a>
+      <a href="#"><img src="img/slack.png" alt="logo" class="logo" /></a>
       <button class="nav-toggle" id="abrir-nav">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -68,13 +68,13 @@
             </svg>
           </button>
           <li class="nav-menu-item">
-            <a href="#seccion-1" class="nav-menu-link" >Principal</a>
+            <a href="#seccion-1" class="nav-menu-link">Principal</a>
           </li>
           <li class="nav-menu-item">
             <a href="#seccion-2" class="nav-menu-link">Sobre nosotros</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#seccion-5" class="nav-menu-link" >Inscribirme</a>
+            <a href="#seccion-5" class="nav-menu-link">Inscribirme</a>
           </li>
         </ul>
       </nav>
@@ -127,7 +127,7 @@
     <section id="seccion-2">
       <div class="contenido-oculto">
         <img src="img/quien.png" alt="user logo" />
-        <h1 >¿QUIÉNES SOMOS?</h1>
+        <h1>¿QUIÉNES SOMOS?</h1>
         <p>
           Somos una empresa que se dedica a la venta de calzado, específicamente
           el deportivo. La cual su única sede está ubicada en la
@@ -283,6 +283,7 @@
               <label class="ayuda" for="nombre">Nombre</label>
               <br />
               <input
+                pattern="[A-Za-zÀ-ÿ\u00f1\u00d1\s]+"
                 id="nombreInput"
                 class="casilla"
                 type="text"
@@ -290,13 +291,14 @@
                 required
               />
               <br />
-              <label class="ayuda" for="mail">Email</label>
+              <label class="ayuda" for="email">Email</label>
               <br />
               <input
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[cC][oO][mM]$"
                 id="mailInput"
                 class="casilla"
-                type="text"
-                name="mail"
+                type="email"
+                name="email"
                 required
               />
               <br />

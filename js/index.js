@@ -21,13 +21,12 @@ abrirNav.addEventListener("click", function () {
 cerrarNav.addEventListener("click", function () {
   nav.classList.remove("visible");
   body.classList.toggle("no-scroll");
-  
 });
 
-links.forEach(link => {
-  link.addEventListener('click', function() {
+links.forEach((link) => {
+  link.addEventListener("click", function () {
     body.classList.toggle("no-scroll");
-    nav.classList.remove('visible');
+    nav.classList.remove("visible");
   });
 });
 
@@ -68,9 +67,35 @@ function mostrarFormulario() {
 }
 
 function validarForm(nombre, mail) {
-  if (nombre && mail) {
-    return true;
-  } else return false;
+  let commonDomains = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com"];
+
+  // Verificar que el correo contiene '@'
+  if (!mail.includes("@")) {
+    alert("El correo electrónico debe contener '@'.");
+    return false;
+  }
+
+  let domain = mail.split("@")[1];
+
+  // Verificar dominio común
+  if (!commonDomains.includes(domain)) {
+    let confirmed = confirm(
+      "El dominio de correo electrónico no es común. ¿Deseas continuar de todas formas?"
+    );
+    if (!confirmed) {
+      return false;
+    }
+  }
+
+  // Verificar longitud del nombre
+  if (nombre.length >= 10) {
+    alert("El nombre debe tener menos de 10 caracteres.");
+    event.preventDefault();
+    return false;
+  }
+
+  // Si pasa todas las verificaciones
+  return true;
 }
 
 function mostrarFeedback() {
@@ -79,7 +104,7 @@ function mostrarFeedback() {
   const resultado = validarForm(nombreValue, mailValue);
   if (resultado) {
     nombreFeedback.innerHTML = nombreValue;
-    mailFeedback.innerHTML = `"${mailValue}"`;
+    mailFeedback.innerHTML = `${mailValue}`;
     form.style.display = "none";
     feedback.style.display = "flex";
     limpiarForm.reset();
